@@ -49,7 +49,7 @@ public class BrazilJSAndroidJS extends Activity {
 	
 	private class JavaScriptBrigde {
 		public void sayHelloFromAndroid(final String msg) {
-//			Toast.makeText(BrazilJSAndroidJS.this, "Chamado do Android", Toast.LENGTH_SHORT).show();
+//			Toast.makeText(BrazilJSAndroidJS.this, "Call from Android", Toast.LENGTH_SHORT).show();
 			handler.post(new Runnable() {
 				public void run() {
 					textView.setText(msg);
